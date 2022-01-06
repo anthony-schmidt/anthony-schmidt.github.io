@@ -26,5 +26,5 @@ echo " "
 git status
 
 #Commit and push
-git commit -m "\"$commit_name\""
-git push -u
+git commit -m "$commit_name"
+git push
