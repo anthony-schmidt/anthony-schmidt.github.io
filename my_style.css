@@ -1,8 +1,26 @@
 ﻿.my_background {
 	font-family: serif;
-	background: #FFFAC2 !important;
+	background: #c2d7e6 !important;
 }
 
-li a {
+ul li a {
 	color: black !important;
+	border-bottom-left-radius: 5px !important;
+	border-bottom-right-radius: 5px !important;
 }
+
+ul li {
+	border: 3px solid black !important;
+	margin: 2px 4px;
+	border-radius: 7px !important;
+	border-bottom-left-radius: 7px !important;
+}
+
+.my_center {
+	text-align: center !important;
+}
+
+.my_font {
+	font-size: 17px !important;
+}
+
