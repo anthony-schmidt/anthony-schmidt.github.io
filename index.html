@@ -1,13 +1,115 @@
 ﻿<!DOCTYPE html>
 <html lang="en-us">
 <head>
+    <!--Meta Info-->
     <meta charset="utf-8" />
-    <!--Version 5.1.3-->
-    <link rel="stylesheet" href="bootstrap.min.css" />
-    <script src="bootstrap.bundle.min.js"></script>
+    <title>Anthony Schmidt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>anthony-schmidt</title>
+    <link rel="shortcut icon" type="image/jpg" href="my-images/favicon.ico" />
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="bootstrap-5.1.3/css/bootstrap.min.css" />
+    <script type="text/javascript" src="bootstrap-5.1.3/js/bootstrap.min.js"></script>
+
+    <!--My Files-->
+    <link rel="stylesheet" type="text/css" href="my_style.css" />
+
+    <script>
+        function updateText() {
+            document.getElementById("home").classList.add("fade")
+            //document.getElementById("home").style.display = "inline";
+        }
+
+    </script>
 </head>
-<body> In progess
+<body class="my_background">
+    <h2>Hey There! I'm Anthony Schmidt</h2>
+    <br>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist" style="background: #FEE2AA ">
+        <li class="nav-item">
+            <a id="home_tab" class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#software">Software</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#golf">Golf</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#music">Music</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#martial_arts">Marital Arts</a>
+        </li>
+    </ul>
+    <div class="container mt-3">
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div id="home" class="container tab-pane active fade show">
+                <br>
+                <h3>Home</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div id="software" class="container tab-pane fade">
+                <br>
+                <h3>Software</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div id="golf" class="container tab-pane fade">
+                <br>
+                <h3>Golf</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="music" class="container tab-pane fade">
+                <br>
+                <h3>Music</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="martial_arts" class="container tab-pane fade">
+                <br>
+                <h3>Martial Arts</h3>
+                <img src="my-images/tkd_img.jpg" style="width: 50%" />
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+        </div>
+    </div>
+    <!--<div class="container-fluid">
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#coding">Coding</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#music">Menu 2</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="container tab-pane active">
+                <p>
+                    Hey there! I'm Anthony Schmidt, and I'm from the Chicagoland area. Currently, I attend the University of Notre Danme where I am pursuing a B.S.
+                    in Computer Science through the College of Engineering with a minor in Engineering Corporate Practice. In addition to Sofware Engineering, I have advanced
+                    accomplishments in music (piano, orgran, percussion), golf, and Martial Arts. I think I would be a valuable employee considering my diverse background and detail-oriented skillset.
+                    resume: <a>here</a>
+                </p>
+            </div>
+            <div id="coding" class="container tab-pane fade">
+                <p>
+                    Coding!
+                </p>
+            </div>
+            <div id="music" class="container tab-pane fade">
+                <p>
+                    Music!
+                </p>
+            </div>
+        </div>
+    </div>-->
+
+    <p>
+        If you are need of a pianist, organist, or percussionist for a Wedding, Funeral, Musical, or Private Event, shoot me an email! : <a>email link</a>
+    </p>
 </body>
-</html>
+</html> 
