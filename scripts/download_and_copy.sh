@@ -15,6 +15,7 @@ if [ $user_input -eq 0 ]
 then
 	exit 0
 fi
+
 #Get Files
 LS=$(ls -I "*.sln" -I "*.config" -I "*.io")
 
