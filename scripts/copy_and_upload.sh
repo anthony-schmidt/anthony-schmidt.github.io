@@ -1,5 +1,6 @@
 ﻿
 #Get Files
+cd ..
 LS=$(ls -I "*.sln" -I "*.config" -I "*.io")
 
 #Message
