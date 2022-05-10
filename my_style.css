@@ -1,5 +1,9 @@
-﻿ul li a {
-	color: black !important;
+﻿a {
+	color: blue !important;
+}
+
+ul li a {
+	/*color: black !important;*/
 	border-bottom-left-radius: 5px !important;
 	border-bottom-right-radius: 5px !important;
 }
@@ -40,3 +44,10 @@ ul li {
 	border-radius: 16px;
 }
 
+.link {
+	color: blue !important;
+}
+
+.my_taskbar_item {
+	color: black !important;
+}
