@@ -16,20 +16,20 @@
 
 </head>
 <body class="my_background">
-    <div class="my_center my_font"><b>Hello! I'm Anthony Schmidt</b></div>
+    <div class="my_center my_large_font"><b>Hello! I'm Anthony Schmidt</b></div>
     <!-- Nav tabs -->
-    <ul class="nav nav-tabs justify-content-center" role="tablist" style="background: #5294ff">
-        <li class="nav-item">
-            <a id="home_tab" class="nav-link active my_taskbar_item" data-bs-toggle="tab" href="#home">Home</a>
+    <ul id="id_menu" class="nav nav-tabs justify-content-center my_nav" style="margin-bottom: 0px !important; background: #5294ff;" role="tablist" >
+        <li class="nav-item my_taskbar_item_li">
+            <a id="home_tab my_taskbar_item" style="color: black !important;" class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link my_taskbar_item" data-bs-toggle="tab" href="#experience">Experience</a>
+        <li class="nav-item my_taskbar_item_li">
+            <a class="nav-link" style="color: black !important;" data-bs-toggle="tab" href="#experience">Experience</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link my_taskbar_item" data-bs-toggle="tab" href="#education_awards">Education/Awards</a>
+        <li class="nav-item my_taskbar_item_li">
+            <a class="nav-link" style="color: black !important;" data-bs-toggle="tab" href="#education_awards">Education/Awards</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link my_taskbar_item" data-bs-toggle="tab" href="#projects">Projects</a>
+        <li class="nav-item my_taskbar_item_li">
+            <a class="nav-link" style="color: black !important;" data-bs-toggle="tab" href="#projects">Projects</a>
         </li>
     </ul>
 
@@ -40,49 +40,79 @@
             <!--Home-->
             <div id="home" class="container tab-pane active fade show my_background_radius" style="background: #5294ff;">
                 <h2><b>Home</b></h2>
-                <img src="my-images/portrait.png" style="float: right; width: 200px; margin-left: 10px" />
+                <img id="id_headshot" src="my-images/updated_headshot.jpg" />
 
                 <!--Bio-->
-                <div class="card my_big_card">
+                <div id="id_bio" class="card my_big_card">
                     <h3>Biography</h3>
-                    Hey there! I'm Anthony Schmidt, and I'm from the Chicagoland area. Currently, I attend the University of Notre Dame where I am pursuing a B.S.
-                    in Computer Science through the College of Engineering with an emphasis in Eletrical Engineering and Math. In addition to Sofware Engineering, I have advanced
-                    accomplishments in music (piano, orgran, percussion), golf, and Martial Arts. Check out the other tabs to see my skills!
+                    <div class="my_medium_font">
+                        Hey there! I'm Anthony Schmidt, and I'm from the Chicagoland area. Currently, I attend the University of Notre Dame where I am pursuing a B.S.
+                        in Computer Science through the College of Engineering with an emphasis in Eletrical Engineering and Math. In addition to Sofware Engineering, I have advanced
+                        accomplishments in music (piano, orgran, percussion), golf, and Martial Arts. Check out the other tabs to see my acheivements!
+                    </div>
                 </div>
 
                 <!--Skills-->
-                <div class="card my_big_card">
+                <div class="card my_big_card my_medium_font">
                     <h3>Skills</h3>
                     <ul>
-                        <li>Software Engineering - C/C++, Python, Bash, Javascript, HTML, CSS, Verilog, ARM and PIC assembly, Visual Studio Professional, Vim, Attention to detail, efficiency, and neat/consistent formatting, programming circuit boards, leadership</li>
-                        <li>Musician - sightreading, Vocalist, Accomplished organist, pianist, and percussionist, music/band leader, Jazz musician/drummer</li>
-                        <li>Tae Kwon Do - Master (4th Degree Black Blet), 2nd Degree Hap Ki Do Black belt, Instructor</li>
-                        <li>Golf - Instructor, Trained Caddie and Forecaddie</li>
+                        <li>
+                            <b>Software Engineering</b>
+                            <ul>
+                                <li><i>Languages:</i> C/C++ | Python | Bash | Javascript, HTML, and CSS | Verilog | ARM and PIC Assembly</li>
+                                <li><i>Text Editors:</i> Visual Studio Professional | Vim</li>
+                                <li><i>Strengths:</i> Attention to detail | Efficiency | Neat/Consistent Formatting</li>
+                                <li><i>Additional abilities:</i> Programming circuit boards | Web Development</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Musicianship</b>
+                            <ul>
+                                <li><i>Instruments:</i> Organist | Pianist | Percussionist | Vocalist</li>
+                                <li><i>Strengths:</i> Sightreading | Improvisation | 4-part harmony compostion | Condcuting</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Martial Arts</b>
+                            <ul>
+                                <li><i>Taekwondo:</i> Master (4<sup>th</sup> Degree Black Belt)</li>
+                                <li><i>Hapkido:</i>  2<sup>nd</sup> Degree Black Belt</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Golf</b>
+                            <ul>
+                                <li><i>Rolls:</i> Instructor | Trained Caddie and Forecaddie</li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
 
                 <!--Contact-->
-                <div class="card my_big_card">
+                <div class="card my_big_card my_medium_font">
                     <h3>Contact Info</h3>
                     <ul>
                         <li><b>Email: </b><a href="mailto:aschmi25@nd.edu">aschmi25@nd.edu</a></li>
-                        <li><b>Linked in: </b> <a href="https://www.linkedin.com/in/anthony-schmidt-0b5b63233/">anthony-schmidt</a></li>
+                        <li><b>Linked in: </b><a href="https://www.linkedin.com/in/anthony-schmidt-0b5b63233/">anthony-schmidt</a></li>
                         <li><b>Github: </b><a href="https://github.com/anthony-schmidt">anthony-schmidt</a></li>
                     </ul>
                 </div>
-                <br />
+                <br>
 
             </div>
 
             <!--Exeprience-->
-            <div id="experience" class="container tab-pane fade my_background_radius" style="background: #86d18c">
+            <div id="experience" class="container tab-pane fade my_background_radius my_medium_font" style="background: #86d18c">
                 <h2><b>Experience</b></h2>
 
                 <!--Assistant to Chief Engineer-->
                 <div class="card my_big_card">
-                    <h3>Assistant to Chief Engineer - <i>Power Electronics International inc. (Dundee IL)</i></h3>
-                    <ul>
-                        <li><i>Summer 2021 - Present</i></li>
+                    <ul class="my_job_ul">
+                        <li class="my_job_img_li"><img src="my-images/PE_logo.png" class="my_job_img" width="50%" /></li>
+                        <li class="my_job_header_li">
+                            <h3 class="my_job_header"><b>Assistant to Chief Engineer</b><br><i><a href="https://www.peinfo.com/">Power Electronics International</a> (Dundee IL)</i></h3>
+                        </li>
+                        <li class="my_job_first_li">Summer 2021 - Present</li>
                         <li>Built website for flagship crane model from the ground up that allowed customers to modify parameters in their product</li>
                         <li>Utilized HTML, CSS, W3, and Javascript</li>
                         <li>Worked closely with Chief Engineer, and assisted him with backend code using CGI files</li>
@@ -94,9 +124,12 @@
 
                 <!--Church Music Leader-->
                 <div class="card my_big_card">
-                    <h3>Church Music Leader - <i>Saint Mary's Parish, Saint Joseph's Church (Elgin IL)</i></h3>
-                    <ul>
-                        <li><i>Summer 2016 - Present</i></li>
+                    <ul class="my_job_ul">
+                        <li class="my_job_img_li"><img src="my-images/organ.png" class="my_job_small_img"></li>
+                        <li class="my_job_header_li">
+                            <h3 class="my_job_header"><b>Church Music Leader</b><i><br><a href="https://stmaryelgin.org/">Saint Mary's</a>, <a href="https://www.stjosephelgin.org/">Saint Joseph's</a> (Elgin IL)</i></h3>
+                        </li>
+                        <li class="my_job_first_li">Summer 2016 - Present</li>
                         <li>Saint Mary's Parish, Saint Josephs Parish (Elgin IL), ND</li>
                         <li>Organist, Pianist, and/or Choir Leader for weekly services and funerals</li>
                         <li>Selected appropriate songs to engage the congregration</li>
@@ -106,10 +139,12 @@
 
                 <!--Accompanist/Musician-->
                 <div class="card my_big_card">
-                    <h3>Accompanist/Musician - <i>Notre Dame (IN), Northridge Prep, Various Locations (Chicagoland)</i></h3>
-                    <ul>
-                        <li><i>Fall 2017 - Present</i></li>
-                        <li>ND (South Bend, IN) Northridge (Niles, IL), Chicagoland area</li>
+                    <ul class="my_job_ul">
+                        <li class="my_job_img_li"><img src="my-images/jazz_drumming.png" class="my_job_img" width="50%" /></li>
+                        <li class="my_job_header_li">
+                        <h3 class="my_job_header"><b>Accompanist/Musician</b><br><i><a href="https://www.nd.edu/">Notre Dame</a> (IN), Chicagoland</i></h3>
+                        </li>
+                        <li class="my_job_first_li">Fall 2017 - Present</li>
                         <li>Sightread piano music for vocalists during Musical Theater classes and audtions</li>
                         <li>Played piano for drama practices and performances</li>
                         <li>Musical entertainer for private and public events</li>
@@ -118,21 +153,26 @@
 
                 <!--Taekwonodo-->
                 <div class="card my_big_card">
-                    <img src="my-images/tkd_img.jpg" style="width: 15%; margin-right: 20%" />
-                    <h3 style="width: 70%">Taekwondo Master and Instructor - <i>TMA Martial Arts (Schaumburg IL)</i></h3>
-
-                    <ul style="display: inline !important">
-                        <li><i>Spring 2013 - Present</i></li>
+                    <ul class="my_job_ul">
+                        <li class="my_job_img_li"><img src="my-images/tkd_img.jpg" class="my_job_small_img"/></li>
+                        <li class="my_job_header_li">
+                            <h3 class="my_job_header"><b>Taekwondo Instructor/Master</b><br><i><a href="http://www.tmamartialarts.net/">TMA Martial Arts</a> (Schaumburg IL)</i></h3>
+                        </li>
+                        <li class="my_job_first_li">Spring 2013 - Present</li>
                         <li>Memorized 200 techniques and taught using their mirror images</li>
                         <li>Instructed students of all ages (pre-school - adults)</li>
+                        <li>Led class when Grand Master was busy</li>
                     </ul>
                 </div>
 
                 <!--Golf Coach-->
                 <div class="card my_big_card">
-                    <h3>Assistant Golf Coach - <i>Northridge Prep (Niles, IL)</i></h3>
-                    <ul>
-                        <li><i>Fall 2017 - Spring 2018</i></li>
+                    <ul class="my_job_ul">
+                        <!--<li class="my_job_img_li"><img src="my-images/jazz_drumming.png" class="my_job_img" width="50%" /></li>-->
+                        <li class="my_job_header_li">
+                            <h3 class="my_job_header"><b>Assistant Golf Coach </b><br><i><a href="https://northridgeprep.org/">Northridge Prep</a> (Niles, IL)</i></h3>
+                        </li>
+                        <li class="my_job_first_li">Fall 2017 - Spring 2018</li>
                         <li>Northridge (Niles, IL)</li>
                         <li>Created and led golf drills</li>
                         <li>Taught golf fundamentals and good sportsmanship</li>
@@ -145,7 +185,7 @@
 
 
             <!--Education/Awards-->
-            <div id="education_awards" class="container tab-pane fade" style="background: #FF695C ">
+            <div id="education_awards" class="container tab-pane fade my_background_radius my_medium_font" style="background: #fd4412">
                 <h2><b>Education/Awards</b></h2>
 
                 <!--Notre Dame-->
@@ -166,27 +206,33 @@
                     <ul>
                         <li><b>Class of:</b> 2020 | <b>GPA:</b> 4.0</li>
                         <li>
-                            <b>Academic Awards:</b> Salutatorian (2020 - <a href="https://www.youtube.com/watch?v=61bMHnmWqPg&t=5243s?t=14m05s">Speech @ 14:05</a>), Math Excellence (2020), Academic Acheivement (2020), National Honors Society (2019 - 2020), Illinois State Scholar (2020)
+                            <b>Academic Awards:</b> Salutatorian (2020: <a href="https://www.youtube.com/watch?v=61bMHnmWqPg&t=846s">Speech @ 14:06</a>), Math Excellence (2020), Academic Acheivement (2020), National Honors Society (2019 - 2020), Illinois State Scholar (2020)
                         </li>
                         <li>
-                            <b>Extracurricular Awards:</b> Golf Athletic Leadership Award (2019, 2020), NRP's Got Talent (2020 - <a href="https://www.youtube.com/watch?v=2hS7od1Aiuw">Taekwondo Video</a>), Band Leader and Music Excellence (2020), 4 year varsisty athlete (2016 - 2020), Best Drama Vocal Performance (2020)
+                            <b>Extracurricular Awards:</b> Golf Athletic Leadership Award (2019, 2020), NRP's Got Talent (2020: <a href="https://www.youtube.com/watch?v=2hS7od1Aiuw">Taekwondo Video</a>), Band Leader and Music Excellence (2020), 4 year varsisty athlete (2016 - 2020), Best Drama Vocal Performance (2020)
                         </li>
                     </ul>
                 </div>
                 <br>
 
             </div>
-            
+
             <!--Projects-->
-            <div id="projects" class="container tab-pane fade">
+            <div id="projects" class="container tab-pane fade my_background_radius my_medium_font" style="background: #b057fa">
                 <h2><b>Projects</b></h2>
-                <div class="card my_big_card">
+                <div class="card my_project_card">
                     <h4><b>In Progress</b></h4>
+                    <div>
+                        My completed projects are on <a href="https://github.com/anthony-schmidt">Github</a>.
+                    </div>
                 </div>
             </div>
+
         </div>
 
-        <br><br><br><br>
+        <br><br><br>
+        <h5 class="my_center" style="font-family: monospace">Hosted on GitHub Pages</h5>
+        <br>
     </div>
 </body>
 </html> 
