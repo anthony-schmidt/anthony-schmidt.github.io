@@ -19,28 +19,6 @@ img {
 	float: right;
 }
 
-@media only screen and (max-width: 600px) {
-	img:not(.my_job_small_img) {
-		width: 80%;
-		float: none;
-		text-align: center !important;
-	}
-
-	#id_headshot {
-		width: 100%;
-		float: none;
-		text-align: center;
-	}
-}
-
-@media only screen and (min-width: 600px) {
-	#id_headshot {
-		float: right;
-		width: 35%;
-		margin-left: 10px;
-	}
-}
-
 .my_background {
 	font-family: serif;
 	background: #eaeaea !important;
@@ -136,14 +114,40 @@ img {
 	font-style: italic;
 }
 
-#id_bio {
-	min-width: 160px;
-}
-
 .my_project_card {
 	border: 2px solid black;
 	padding: 4px;
 	border-radius: 8px !important;
 	margin: 4px;
 	background-color: #eaeaea !important;
+}
+
+#id_bio {
+	min-width: 160px;
+}
+
+#id_headshot {
+	vertical-align: bottom;
+}
+
+@media only screen and (max-width: 600px) {
+	img:not(.my_job_small_img) {
+		width: 80%;
+		float: none;
+		text-align: center !important;
+	}
+
+	#id_headshot {
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	#id_headshot {
+		float: right;
+		width: 35%;
+		margin-left: 10px;
+	}
 }

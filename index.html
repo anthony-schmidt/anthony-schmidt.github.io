@@ -13,9 +13,10 @@
 
     <!--My Files-->
     <link rel="stylesheet" type="text/css" href="my_style.css" />
+    <script src="my_functions.js"></script>
 
 </head>
-<body class="my_background">
+<body class="my_background" onload="fixImage()">
     <div class="my_center my_large_font"><b>Hello! I'm Anthony Schmidt</b></div>
     <!-- Nav tabs -->
     <ul id="id_menu" class="nav nav-tabs justify-content-center my_nav" style="margin-bottom: 0px !important; background: #5294ff;" role="tablist" >
@@ -40,7 +41,8 @@
             <!--Home-->
             <div id="home" class="container tab-pane active fade show my_background_radius" style="background: #5294ff;">
                 <h2><b>Home</b></h2>
-                <img id="id_headshot" src="my-images/updated_headshot.jpg" />
+                <img id="id_headshot" fetchpriority="high" src="my-images/updated_headshot_min.jpg" />
+                <img id="id_hidden_headshot" fetchpriority="high" hidden/>
 
                 <!--Bio-->
                 <div id="id_bio" class="card my_big_card">
@@ -59,7 +61,7 @@
                         <li>
                             <b>Software Engineering</b>
                             <ul>
-                                <li><i>Languages:</i> C/C++ | Python | Bash | Javascript, HTML, and CSS | Verilog | ARM and PIC Assembly</li>
+                                <li><i>Languages:</i> C/C++ | Python | Bash/Batch | Javascript, HTML, and CSS | Verilog | ARM and PIC Assembly</li>
                                 <li><i>Text Editors:</i> Visual Studio Professional | Vim</li>
                                 <li><i>Strengths:</i> Attention to detail | Efficiency | Neat/Consistent Formatting</li>
                                 <li><i>Additional abilities:</i> Programming circuit boards | Web Development</li>
@@ -108,24 +110,25 @@
                 <!--Assistant to Chief Engineer-->
                 <div class="card my_big_card">
                     <ul class="my_job_ul">
-                        <li class="my_job_img_li"><img src="my-images/PE_logo.png" class="my_job_img" width="50%" /></li>
+                        <li class="my_job_img_li"><img src="my-images/PE_logo.png" fetchpriority="low" class="my_job_img" width="50%" /></li>
                         <li class="my_job_header_li">
-                            <h3 class="my_job_header"><b>Embedded Web Developer</b><br><i><a href="https://www.peinfo.com/" target="_blank">Power Electronics International</a> (Dundee IL)</i></h3>
+                            <h3 class="my_job_header"><b>Embedded Web Developer/Software Engineer</b><br><i><a href="https://www.peinfo.com/" target="_blank">Power Electronics International</a> (Dundee IL)</i></h3>
                         </li>
                         <li class="my_job_first_li">Summer 2021 - Present</li>
                         <li>Built website for flagship crane model from the ground up that allowed customers to modify parameters in their product</li>
-                        <li>Utilized HTML, CSS, W3, and Javascript</li>
-                        <li>Worked closely with Chief Engineer, and assisted him with backend code using CGI files</li>
-                        <li>Parsed various data formats (XML, CGX, JSON)</li>
-                        <li>Collaborated with coworkers to ensure a user-friendly website</li>
-                        <li>Helped scripting engineer solve problems efficiently and effectively</li>
+                        <li>Utilized HTML, CSS, W3.CSS, and Javascript</li>
+                        <li>Wrote batch scripts to efficiently test website and product compatibilty</li>
+                        <li>Worked closely with Chief Engineer, and assisted him with backend code using CGI and CGX files</li>
+                        <li>Parsed various data formats (XML <i>(CGX)</i>, JSON)</li>
+                        <li>Collaborated with coworkers to ensure a user-friendly website and solve problems
+                        <li>
                     </ul>
                 </div>
 
                 <!--Church Music Leader-->
                 <div class="card my_big_card">
                     <ul class="my_job_ul">
-                        <li class="my_job_img_li"><img src="my-images/organ.png" class="my_job_small_img"></li>
+                        <li class="my_job_img_li"><img src="my-images/organ.png" fetchpriority="low" class="my_job_small_img"></li>
                         <li class="my_job_header_li">
                             <h3 class="my_job_header"><b>Church Music Leader</b><i><br><a href="https://stmaryelgin.org/" target="_blank">Saint Mary's</a>, <a href="https://www.stjosephelgin.org/" target="_blank">Saint Joseph's</a> (Elgin IL)</i></h3>
                         </li>
@@ -140,9 +143,9 @@
                 <!--Accompanist/Musician-->
                 <div class="card my_big_card">
                     <ul class="my_job_ul">
-                        <li class="my_job_img_li"><img src="my-images/jazz_drumming.png" class="my_job_img" width="50%" /></li>
+                        <li class="my_job_img_li"><img src="my-images/jazz_drumming.png" fetchpriority="low" class="my_job_img" width="50%" /></li>
                         <li class="my_job_header_li">
-                        <h3 class="my_job_header"><b>Accompanist/Musician</b><br><i><a href="https://www.nd.edu/" target="_blank">Notre Dame</a> (IN), Chicagoland</i></h3>
+                            <h3 class="my_job_header"><b>Accompanist/Musician</b><br><i><a href="https://www.nd.edu/" target="_blank">Notre Dame</a> (IN), Chicagoland</i></h3>
                         </li>
                         <li class="my_job_first_li">Fall 2017 - Present</li>
                         <li>Sightread piano music for vocalists during Musical Theater classes and audtions</li>
@@ -154,7 +157,7 @@
                 <!--Taekwonodo-->
                 <div class="card my_big_card">
                     <ul class="my_job_ul">
-                        <li class="my_job_img_li"><img src="my-images/tkd_img.jpg" class="my_job_small_img"/></li>
+                        <li class="my_job_img_li"><img src="my-images/tkd_img.jpg" fetchpriority="low" class="my_job_small_img"/></li>
                         <li class="my_job_header_li">
                             <h3 class="my_job_header"><b>Taekwondo Instructor/Master</b><br><i><a href="http://www.tmamartialarts.net/" target="_blank">TMA Martial Arts</a> (Schaumburg IL)</i></h3>
                         </li>
@@ -168,7 +171,7 @@
                 <!--Golf Coach-->
                 <div class="card my_big_card">
                     <ul class="my_job_ul">
-                        <!--<li class="my_job_img_li"><img src="my-images/jazz_drumming.png" class="my_job_img" width="50%" /></li>-->
+                        <!--<li class="my_job_img_li"><img src="my-images/jazz_drumming.png" fetchpriority="low" class="my_job_img" width="50%" /></li>-->
                         <li class="my_job_header_li">
                             <h3 class="my_job_header"><b>Assistant Golf Coach </b><br><i><a href="https://northridgeprep.org/" target="_blank">Northridge Prep</a> (Niles, IL)</i></h3>
                         </li>
@@ -193,7 +196,7 @@
                     <ul>
                         <li>Pursuing a B.S. from the College of Engineering with a major in Computer Science and an emphasis in Math and Electrical Engineering</li>
                         <li><b>Class of:</b> 2024 | <b>GPA:</b> 3.74</li>
-                        <li><b>Completed Engineering Coursework:</b> Embedded Systems, Data Structures, Operating Systems, Logic Design, Computer Architecture, Linear Algebra, Probability and Statisticts</li>
+                        <li><b>Completed Engineering Coursework:</b> Embedded Systems, Data Structures, Operating Systems, Logic Design, Computer Architecture, Linear Algebra, Probability and Statistics</li>
                         <li><b>Awards: </b>Dean's list (2021), Monk Malloy Service (2021)</li>
                         <li><b>Extracurriculars: </b>Lead drummer in <a href="https://youtu.be/l18qcFLrdVk?t=1957" target="_blank">Jazz Band 1</a>, Treasurer for <a href="http://ndunchainedmelodies.weebly.com/meet-the-melodies.html" target="_blank">Unchained Melodies - Choir</a></li>
                     </ul>
