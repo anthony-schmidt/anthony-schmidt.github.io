@@ -19,36 +19,36 @@ img {
 	float: right;
 }
 
-.my_background {
+.my-background {
 	font-family: serif;
 	background: #eaeaea !important;
 }
 
-.my_center {
+.my-center {
 	text-align: center !important;
 }
 
-.my_large_font {
+.my-large-font {
 	font-size: 28px !important;
 }
 
-.my_medium_font {
+.my-medium-font {
 	font-size: 18px !important;
 }
 
-.my_big_card {
+.my-big-card {
 	border: 2px solid black;
 	padding: 4px;
 	border-radius: 8px !important;
 	margin: 4px;
 }
 
-.my_little_card {
+.my-little-card {
 	border-radius: 8px !important;
 	border: none !important;
 }
 
-.my_background_radius {
+.my-background-radius {
 	border-radius: 16px;
 }
 
@@ -56,41 +56,41 @@ img {
 	color: blue !important;
 }
 
-.my_nav {
+.my-nav {
 	margin-bottom: 0px !important;
 }
 
-.my_taskbar_item_li {
+.my-taskbar-item-li {
 	color: black !important;
 	border: 3px solid black;
 	margin-bottom: 3px;
 	padding-bottom: 1px;
 }
 
-.my_taskbar-item_li:hover {
-	border: black !important;
-}
+	.my-taskbar-item-li:hover {
+		/*border: black !important;*/
+	}
 
-.my_taskbar_item {
+.my-taskbar-item {
 	color: black !important;
 }
 
-.my_job_ul {
+.my-job-ul {
 	margin-top: -20px;
 }
 
-.my_job_img_li {
+.my-job-img-li {
 	list-style: none;
 	display: inline;
 }
 
-.my_job_img {
+.my-job-img {
 	margin-top: 20px;
 	max-width: 430px;
 	max-height: 318px;
 }
 
-.my_job_small_img {
+.my-job-small-img {
 	margin-top: 20px;
 	width: 30%;
 	min-width: 132px;
@@ -99,22 +99,22 @@ img {
 	max-height: 325px;
 }
 
-.my_job_header_li {
+.my-job-header-li {
 	list-style: none;
 	display: inline;
 }
 
-.my_job_header {
+.my-job-header {
 	margin-left: -30px;
 	word-break: keep-all;
 }
 
-.my_job_first_li {
+.my-job-first-li {
 	margin-top: -20px;
 	font-style: italic;
 }
 
-.my_project_card {
+.my-project-card {
 	border: 2px solid black;
 	padding: 4px;
 	border-radius: 8px !important;
@@ -122,22 +122,22 @@ img {
 	background-color: #eaeaea !important;
 }
 
-#id_bio {
+#id-bio {
 	min-width: 160px;
 }
 
-#id_headshot {
+#id-headshot {
 	vertical-align: bottom;
 }
 
 @media only screen and (max-width: 600px) {
-	img:not(.my_job_small_img) {
+	img:not(.my-job-small-img) {
 		width: 80%;
 		float: none;
 		text-align: center !important;
 	}
 
-	#id_headshot {
+	#id-headshot {
 		width: 100%;
 		float: none;
 		text-align: center;
@@ -145,7 +145,7 @@ img {
 }
 
 @media only screen and (min-width: 600px) {
-	#id_headshot {
+	#id-headshot {
 		float: right;
 		width: 35%;
 		margin-left: 10px;
