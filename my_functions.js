@@ -7,3 +7,7 @@
 		small_image.src = big_image.src;
 	}
 }*/
+
+function websiteVisits(response) {
+	document.querySelector("#visits").textContent = response.value;
+}

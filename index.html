@@ -11,9 +11,13 @@
     <link rel="stylesheet" type="text/css" href="bootstrap-5.1.3/css/bootstrap.min.css" />
     <script type="text/javascript" src="bootstrap-5.1.3/js/bootstrap.min.js"></script>
 
+    <!--Counter Script-->
+    <script async src="https://api.countapi.xyz/hit/https://anthony-schmidt.com/22aff689-18c7-404f-b43f-933ced59caaf?callback=websiteVisits"></script>
+
     <!--My Files-->
     <link rel="stylesheet" type="text/css" href="my_style.css" />
     <script src="my_functions.js"></script>
+
 
 </head>
 <body class="my-background">
@@ -41,7 +45,7 @@
             <!--Home-->
             <div id="home" class="container tab-pane active fade show my-background-radius" style="background: #5294ff;">
                 <h2><b>Home</b></h2>
-                <img id="id_headshot" fetchpriority="high" src="my-images/updated_headshot_min.jpg" width="50%" style="margin-left: 10px"/>
+                <img id="id_headshot" fetchpriority="high" src="my-images/updated_headshot_min.jpg" width="50%" style="margin-left: 10px" />
 
                 <!--Bio-->
                 <div id="id_bio" class="card my-big-card">
@@ -119,8 +123,9 @@
                         <li>Wrote batch scripts and C files to efficiently test website and product compatibilty</li>
                         <li>Worked closely with Chief Engineer, and assisted him with backend code using CGI and CGX files</li>
                         <li>Parsed various data formats (XML <i>(CGX)</i>, JSON)</li>
-                        <li>Collaborated with coworkers to ensure a user-friendly website and solve problems
-           </li>
+                        <li>
+                            Collaborated with coworkers to ensure a user-friendly website and solve problems
+                        </li>
                     </ul>
                 </div>
 
@@ -156,7 +161,7 @@
                 <!--Taekwonodo-->
                 <div class="card my-big-card">
                     <ul class="my-job-ul">
-                        <li class="my-job-img-li"><img src="my-images/tkd_img.jpg" fetchpriority="low" class="my-job-small-img"/></li>
+                        <li class="my-job-img-li"><img src="my-images/tkd_img.jpg" fetchpriority="low" class="my-job-small-img" /></li>
                         <li class="my-job-header-li">
                             <h3 class="my-job-header"><b>Taekwondo Instructor/Master</b><br><i><a href="http://www.tmamartialarts.net/" target="_blank">TMA Martial Arts</a> (Schaumburg IL)</i></h3>
                         </li>
@@ -232,7 +237,8 @@
 
         </div>
 
-        <br><br><br>
+        <br><br>
+        <h5 class="my-center">This site has been visited <span id="visits"></span> times.</h5>
         <h5 class="my-center" style="font-family: monospace">Hosted on GitHub Pages</h5>
         <br>
     </div>
