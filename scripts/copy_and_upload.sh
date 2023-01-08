@@ -1,4 +1,5 @@
-﻿
+﻿#IMPORTANT: Must be in current directory
+
 #Get Files
 cd ..
 LS=$(ls -I "*.sln" -I "*.config" -I "*.io")

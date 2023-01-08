@@ -1,5 +1,7 @@
-﻿
+﻿#IMPORTANT: Must be in current directory
+
 #Cd into github directory
+cd ..
 cd anthony-schmidt.github.io
 
 #Get user input
